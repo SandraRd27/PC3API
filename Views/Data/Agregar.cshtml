@@ -1,0 +1,43 @@
+@model PC3API.Integration.data.Datos
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <h4 class=" ">Agregar Usuario</h4>
+    <hr />
+
+        <div class="col-md-4">
+            <form asp-action="Agregar">
+                <div asp-validation-summary="ModelOnly" class="text-primary"></div>
+                <div class="form-group">
+                    <label asp-for="id" class="control-label"></label>
+                    <input asp-for="id" class="form-control" />
+                    
+                </div>
+                <div class="form-group">
+                    <label asp-for="email" class="control-label"></label>
+                    <input asp-for="email" class="form-control" />
+                    
+                </div>
+                <div class="form-group">
+                    <label asp-for="first_name" class="control-label"></label>
+                    <input asp-for="first_name" class="form-control" />
+                    
+                </div>
+                <div class="form-group">
+                    <label asp-for="last_name" class="control-label"></label>
+                    <input asp-for="last_name" class="form-control" />
+                    
+                </div>
+                <div class="form-group">
+                    <label asp-for="avatar" class="control-label"></label>
+                    <input asp-for="avatar" class="form-control" />
+                    
+                </div>            
+                <div class="form-group ">
+                    <input type="submit" value="Agregar" class="btn btn-primary " /> 
+                </div>
+            </form>
+    </div>
+

@@ -1,7 +1,11 @@
+using PC3API.Integration.API;
+using Microsoft.Extensions.Logging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<APIIntegration,APIIntegration >();
 
 var app = builder.Build();
 
